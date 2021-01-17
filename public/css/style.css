@@ -1,0 +1,79 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+.bottom-container {
+  background-color: black;
+}
+
+
+.footer{
+  background-color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+.footer a {
+  font-family: 'Alata', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+/*
+.hero-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+} */
+
+.hero-immersive {
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  left: 10%;
+  width: 45%;
+  border-style: solid;
+  border-color: white;
+  padding: 2%;
+
+}
+
+.logo {
+
+}
+
+.middle-container {
+display: grid;
+}
+
+.nav-li {
+
+}
+
+
+.top-container {
+  width: 100%;
+  background-image: url(/images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5%;
+  color: white;
+
+}
+
+.top-container a {
+  font-family: 'Alata', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
