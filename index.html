@@ -1,76 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
 
-  <title>Frontend Mentor | Loopstudios landing page</title>
+<title>Frontend Mentor | Loopstudios landing page</title>
 
 </head>
 <body>
+  <header>
+    <img
+      class="hero-image"
+      srcset="
+      /images/desktop/image-hero.jpg 1440w,
+      /images/mobile/image-hero.jpg 750w
+      "
+      src="/images/desktop/image-hero.jpg"
+      />
 
-  <img src="/images/logo.svg" alt="" />
-  <a>About</a>
-  <a>Careers</a>
-  <a>Events</a>
-  <a>Products</a>
-  <a>Support</a>
+
+    <div class="header-container">
+
+      <div class="topnav">
+        <img class="logo"src="/images/logo.svg"/>
+
+        <div class="nav">
+              <img class="hamburger" src="/images/icon-hamburger.svg" alt="hamburger">
+              <a href="">About</a>
+              <a href="">Careers</a>
+              <a href="">Events</a>
+              <a href="">Products</a>
+              <a href="">Support</a>
+        </div>
+      </div>
+      <!-- Hero image and div -->
+      <div class="hero-header">
+      <h1>IMMERSIVE EXPERIENCES <span class="hero-header-space">THAT DELIVER</span></h1>
+      </div>
+
+    </div>
 
 
-  <h1>Immersive experiences that deliver</h1>
 
-  <div>
-    <h2>The leader in interactive VR</h2>
-    <p>
-      Founded in 2011, Loopstudios has been producing world-class virtual reality
-      projects for some of the best companies around the globe. Our award-winning
-      creations have transformed businesses through digital experiences that bind
-      to their brand.
-    </p>
+  </header>
+
+  <!-- middle section -->
+  <div class="main">
+      <!-- middle header -->
+      <div class="">
+        <h2>The leader in interactive VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.
+        </p>
+
+      </div>
+
+      <!-- middle gap area -->
+      <div class="">
+        <h1>Our Creations</h1>
+      </div>
+
+      <!-- middle image grid -->
+      <div class="creations-container">
+
+        <div class="creations">Deep Earth</div>
+        <div class="creations">Night Arcade</div>
+        <div class="creations">Soccer Team VR</div>
+        <div class="creations">The Grid</div>
+        <div class="creations">From Up Above VR</div>
+        <div class="creations">Pocket Borealis</div>
+        <div class="creations">The Curiosity</div>
+        <div class="creations">Make It Fisheye</div>
+
+      </div>
+
 
   </div>
+  <!-- footer section -->
+  <footer>
+    <div class="">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Matt Wilkes</a>.
+    </div>
 
-
-
-  <h1>Our creations</h1>
-
-  <a>See all</a>
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-
-
-
-<!--Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </footer>
 
 </body>
-<footer>
-  <div>
-    <a>About</a>
-    <a>Careers</a>
-    <a>Events</a>
-    <a>Products</a>
-    <a>Support</a>
-    <p>
-      © 2021 Loopstudios. All rights reserved.
-    </p>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Matt Wilkes</a>.
-  </div>
-</footer>
+
 </html>
