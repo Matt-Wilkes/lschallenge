@@ -64,7 +64,6 @@ footer{
     display: none;
   }
 
-}
 
 
 
@@ -132,6 +131,7 @@ letter-spacing: 0.25rem;
   align-content: space-around;
   justify-items: center;
 
+  /* background-image: url('/images/desktop/image-hero.jpg'); */
 }
 
 .nav a {
