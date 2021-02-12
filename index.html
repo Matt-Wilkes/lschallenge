@@ -8,11 +8,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon-32x32.png">
+  <link rel="stylesheet" href="public/css/style.css">
 
 <title>Frontend Mentor | Loopstudios landing page</title>
 
@@ -21,34 +21,40 @@
 <body>
   <header>
     <img
-      class="hero-image"
+      class="hero-image-desktop"
       srcset="
-      images/desktop/image-hero.jpg 1440w,
-      images/mobile/image-hero.jpg 750w
+      public/images/desktop/image-hero.jpg 1440w,
+      public/images/mobile/image-hero.jpg 750w
       "
       src="public/images/desktop/image-hero.jpg"
       />
 
 
     <div class="header-container">
+        <div class="header-buttons">
+          <img class="logo"src="public/images/logo.svg"/>
 
-      <div class="topnav">
-        <img class="logo"src="public/images/logo.svg"/>
-
-        <div class="nav">
-              <img class="hamburger" src="images/icon-hamburger.svg" alt="hamburger">
-              <a href="">About</a>
-              <a href="">Careers</a>
-              <a href="">Events</a>
-              <a href="">Products</a>
-              <a href="">Support</a>
+          <div class="nav-toggle" id="navToggle">
+            <img id="hamburger" class="navIcon" src="public/images/icon-hamburger.svg" alt="Hamburger Menu">
+            <img class="navIcon hidden" src="public/images/icon-close.svg" alt="Close Hamburger">
+          </div>
         </div>
-      </div>
-      <!-- Hero image and div -->
-      <div class="hero-header">
-      <h1>IMMERSIVE EXPERIENCES <span class="hero-header-space">THAT DELIVER</span></h1>
-      </div>
 
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero image and div -->
+
+    </div>
+    <div class="hero-header">
+      <h1>IMMERSIVE EXPERIENCES <span class="hero-header-space">THAT DELIVER</span></h1>
     </div>
 
 
@@ -99,6 +105,8 @@
 
   </footer>
 
+
+<script src="app.js"></script>
 </body>
 
 </html>
